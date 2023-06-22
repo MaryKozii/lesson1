@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Basic command</h2>
+    <ul>
+        <li><b>git config --global user.name "Mariia Kozii"</b> - задати ім'я користувача (викорисутовується тільки в перший раз)</li>
+        <li><b>git config --global user.email "koziimariia@gmail.com"</b> - задати пошту користувача (викорисутовується тільки в перший раз)</li>
+        <li><b>git status</b> - показує стан репозиторію(як файли відслідковуються, які зміни);</li>
+        <li><b>git init</b> - ініціалізувати пустий репозиторій;</li>
+        <li><b>git add</b> - перевести зміни в stage стадію;</li>
+        <li><b>git commit</b> - комітить всі зміни і зберігає їх в історію версій (локально);</li>
+        <li><b>git log</b> - показує історію комітів;</li>
+        <li><b>git checkout "commit id"</b> - повертає файли і репозиторій до відповідної версії;</li>
+        <li><b>git checkout (- , master)</b> - повернутись до останньоЇ версії;</li>
+        <li><b>git checkout "branch name"</b> - переключається на вибрану гілку і оновлює папку до її стану;</li>
+        <li><b>git branch "branch name"</b> - створює нову гілку;</li>
+        <li><b>git push -u </b>- відправляє всі закомічені дані на віддалений репозиторій;
+        <br><b>pull</b> = fetch + merge;</li>
+        <li><b>git merge</b> - вносить зміни з віддаленого реп. у поточну гілку локального;</li>
+        <li><b>git clone</b> - клонувати репозиторій з github;</li>
+    </ul>
+            <h2>Advanced command</h2>
+    <ul>
+            <li><b>git revert</b> - відміняє останній коміт, створюючи новий який включає всі відмінені зміни; </li>
+            <li><b>git reset</b> (--hard)<commit id> - відміняє всі коміти після заданого і залишає
+            всі зміни в робочій папці. (видаляє зміни в папці);</li>
+            <li> <b>git rebase</b> - ще один спосіб (merge) перенести зміни з однієї вітки в іншу;</li>
+            <li><b>git cherry-pick</b> - для перенесення окремих комітів в інше місце репозиторію;</li>
+            <li><b>git stash</b> - бере ваші зміни, готові і не готові до фіксації, зберігає їх для
+            подальшого використання і забирає їх з робочої області;</li>
+        </ul>
+            <b>.gitignore</b> - в цей файл вписуємо всі файли та папки за якими не має слідкувати git
+            та не завантажувати у віддалений репозиторій;
+
+</body>
+</html>
